@@ -10,7 +10,6 @@ $(document).ready( function(){
   const y = date.getFullYear();
 
   function onEventClick(calEvent) {
-
     const start = dateConverter(calEvent.start);
     localStorage.setItem("currentEvent", JSON.stringify({
         title: calEvent.title,
@@ -20,7 +19,6 @@ $(document).ready( function(){
     }))
     
     window.location.href = "events.html"
-
   }
 
   const events = [
